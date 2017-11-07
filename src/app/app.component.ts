@@ -9,7 +9,12 @@ export class AppComponent {
   title = 'Todo sample app';
   lists = {
     todo: {
-      name: 'To do'
+      name: 'To do',
+      tasks: [
+        'Todo #1',
+        'Todo #2',
+        'Todo #3'
+      ]
     }
   }
 
