@@ -1,4 +1,4 @@
 <div>
-  <input type="checkbox" name="task1">
-  <label for="task1">{{ task }}</label>
+  <input type="checkbox" [checked]="task.done">
+  <label [ngClass]="{'taskIsDoneDecoration': task.done}">{{ task.name }}</label>
 </div>
