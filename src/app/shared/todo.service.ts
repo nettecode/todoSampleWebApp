@@ -1,6 +1,10 @@
+import { EventEmitter } from '@angular/core';
+
 import { Todo } from './todo.model';
 
 export class TodoService {
+  todoChanged = new EventEmitter<Todo[]>();
+
   private tasks: Todo[] = [
         new Todo('Todo #11'),
         new Todo('Todo #12'),
