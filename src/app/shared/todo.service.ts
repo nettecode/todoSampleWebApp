@@ -14,6 +14,11 @@ export class TodoService {
         new Todo('Todo #16', true)
   ];
 
+  addTodo(todo) {
+    this.tasks.push(todo);
+    this.todoChanged.emit();
+  }
+
   getTasks() {
     return this.tasks;
   }
